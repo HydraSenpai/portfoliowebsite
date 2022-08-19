@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nicholas Daly Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <!-- Update with own fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/3cfff42ea5.js" crossorigin="anonymous"></script>
+
+
+
+    </head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <!--<img src="img/CallKylie.jpg" alt="">-->
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+
+        <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Java <strong> Block Avoid</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Mini title</p>
+        <img src="img/Picture1.gif" alt="a picture of the project" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>This game was written in pure java back in 2021. It was an attempt to teach myself GUI as well as some Game Engine basics, such as game loop,
+            render stages and collision. It was also my first java program that didn't rely on the built in console. It worked well as a learning tool
+            and in my opinion came out well as a final game. Obviously the design is very basic, but the idea worked well and the game executes smoothly. 
+        </p>
+        <div class="portfolio-item__image">  
+            <img class="portfolio-item__img" src="img/projectGif.gif" alt="">
+        </div>
+        <p>I was very naive when creating this project. I decided that I would do the whole project using only my brain and no help from the internet.
+            As it was my first game this surprisingly worked well for a while, until bugs appeared one after another. I had a few issues with screen boundary collision.
+            Firstly the player could move the cursor outside of the play area, completely avoiding all the enemies!
+            Afterwards I realised moving the game window would not move all the game objects with it, they stayed relative to the screen and would disappear from view.
+
+        </p>
+        <p>Apart from these 2 main bugs every other issue was the usual missing semi-colon or me writing the wrong variable name.
+            This project taught me many things. Along with the code experience I learned that even though it's cool to be able create games in raw java,
+            I don't want to do it again. Knowing when to use the internet was also a big learning experience.
+        </p>
+        <p>
+            The code to this game can be found <a href="https://github.com/HydraSenpai/BlockAvoidGame">here</a>
+        </p>
+    </div>
+        
+        
+        <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:2nicholasdaly@gmail.com" class="footer__link">2nicholasdaly@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/HydraSenpai">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/_nicholas_daly/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/nicholas.daly.9085">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://discordapp.com/users/NicholasHSXL#5716/">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

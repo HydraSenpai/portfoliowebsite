@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>nd.codes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <!-- Update with own fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/3cfff42ea5.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!--<img src="img/CallKylie.jpg" alt="">-->
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">What I do</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Nicholas Daly</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Aspiring Software Engineer</p>
+        <img src="img/backMountainSq-min.jpg" alt="a picture of Nicholas" class="intro__img">
+    </section>
+
+    <!-- My Section -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+
+        <div class="services">
+            <div class="service">
+                <h3>Computer Science</h3>
+                <p>I am a full-time 3rd year Computing Science student, currently working towards my Masters degree; awaiting my graduation already!</p>
+            </div>
+
+            <div class="service">
+                <h3>Aspiring Software Engineer</h3>
+                <p>I am a proficient java programmer, however can pickup and integrate other languages easily. I have experience with C, Haskell, Python, JavaScript...  </p>
+            </div>
+
+            <div class="service">
+                <h3>Side Interests</h3>
+                <p>I started with learning games design, but have slowly moved to other areas of programming. Hope I can pick a discipline soon :)</p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+
+    </section>
+
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Computer Science Student</p>
+
+        <div class="about-me__body">
+            <p>Hi! I am a 20 year old (feels horrible to write) Computer Science student from Scotland. I love the sun, bubble tea, noodles, and cats.</p>
+            <p>I wish to expand my knowledge of programming, whilst keeping a balance of other things that I find fun. I go to the gym, study Vietnamese (currently at a beginner level) and I love to travel.
+                Please come back to this section as I am always updating my personality! Thank you for reading.
+            </p>
+        </div>
+
+        <img src="img/beachsmallcut2-min.jpg" alt="KyliePortrait" class="about-me__img">
+        
+        
+        <div class="about-me__button-flex">
+            <a class="btn" onclick="showAboutExtended()">More about me</a>
+        </div>
+        
+    </section>
+
+    <!-- Extended about me Finish --> 
+    
+
+    <section class="about-me-extended" id="about-extended">
+
+        <div class="about-me-extended__buttons">
+            <a class="btn" id="musicBtn" onclick="revealMusic()">Music</a>
+            <a class="btn" id="tvBtn" onclick="revealTv()">Tv</a>
+            <a class="btn" id="travelBtn" onclick="revealTravel()">Travel</a>
+        </div>
+
+        <div class="about-me-extended__texts">
+            <div class="about-me-extended__text" id="music">
+                <p style="margin-bottom: 25px;">
+                    Here are some of my favourite albums. My music taste is quite open as I can listen to pretty much anything and I'll be happy.
+                    I mostly listen to edm with some kpop, emo and rock mixed in. My childhood started with Linkin Park but they have always stuck with me, so
+                    I consider them my favourite band!
+                    <BR><BR>
+                    I also have an addiction to lo-fi music, which has been the sole reason
+                    for me passing all uni classes. The artist Purrple Cat has been my saving grace this year. Definitely give them a listen if you like lo-fi or need
+                    some study motivation.
+
+                </p>
+                <div class="extended__images">
+                    <img src="img/fallenEmbers.jpg" alt="fallenEmbers">
+                    <img src="img/adventureIsland.jpg" alt="fallenEmbers">
+                    <img src="img/meteroa.jpg" alt="fallenEmbers">
+                    <img src="img/taboo.jpg" alt="fallenEmbers">
+                    <img src="img/gravity.png" alt="fallenEmbers">
+                </div>   
+            </div>
+            
+            <div class="about-me-extended__text" id="tv">
+                <p>
+                    I never have enough time to watch tv so trying to decide my favourite series from
+                    the small number of shows I've watched is easy. My recent top 3 series would have to be 'Arcane'... actually that's all I have watched recently.
+                    <BR><BR>
+                    I am a big anime fan so maybe that's where most of my time goes. 
+                    I love slice-of-life, romance and fantasy anime, such as 'Koboyashi's Dragon Maid', 'Mirai Nikki' and 'Rascal does not dream of a bunny girl senpai'.
+                    However, I can probably enjoy any genre of anime as long as it's not horror -_-
+                    <BR><BR>
+                    It's a similar situation for movies, like series, I don't regularly sit down to watch movies. It's more of a spontaneous feeling that I'll see a movie plot
+                    online and need to watch it. My favourite movies of all time are 'Gladiator' and 'Coraline'.
+                </p>
+            </div>
+           
+            <div class="about-me-extended__text"  id="travel">
+                <p>
+                    As stated above I have a passion for travelling. I have lived in Scotland my whole life and obviously that can be a bit dull at times, 
+                    especially with the terrible weather we have here. Unfortunately I haven't actually had the luxury to travel much, 
+                    so hopefully from now on that'll change!
+                    <BR><BR>
+                    This year I was fortunate enough to travel to Vietnam for 2 weeks during summer break. It was a totally different experience to Scotland, 
+                    and it really opened my eyes being introduced to a new culture all at once. The weather, food, and culture as a whole was way better than anything I have at home. 
+                    I loved every second of my trip and hope to go back soon. I have attached some photos below of some highlights from the trip!
+                    
+                    <div class="about-me-extended__holiday-pictures">
+                        <img src="img/IMG_1996-min.JPG">
+                        <img src="img/IMG_1714-min.JPG">
+                        <img src="img/IMG_1945-min.JPG">
+                    </div>
+
+
+                </p>
+            </div>
+            
+        </div>
+
+
+
+    </section>
+
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+
+            
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/Picture1.gif" alt="" class="portfolio__img">
+            </a>
+
+            <p> Will be full soon! :) </p>
+            <!--
+
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/CallKylie.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/squareGraduation.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/squareGraduation.jpg" alt="" class="portfolio__img">
+            </a>
+
+        -->
+
+           </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:2nicholasdaly@gmail.com" class="footer__link">2nicholasdaly@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/HydraSenpai">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/_nicholas_daly/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/nicholas.daly.9085">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://discordapp.com/users/NicholasHSXL#5716/">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -526,6 +526,7 @@ header {
     display: grid;
     /*change 0px to 1fr when there is more than 1 item */
     grid-template-columns: repeat(auto-fit,minmax(300px,0px));
+    column-gap: 5px;
 }
 
 .portfolio__item {
@@ -537,7 +538,10 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    min-width: 300px;  
+    min-width: 300px;
+    min-height: 300px;
+    object-fit:cover;  
+    object-position: 10% 90%;
 }
 
 .portfolio__item:focus {
@@ -620,4 +624,5 @@ header {
 .portfolio-item__img {
     object-fit: contain;
     min-width: 250px;  
+    max-height:250px;
 }

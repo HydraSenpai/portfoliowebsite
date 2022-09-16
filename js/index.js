@@ -7,6 +7,12 @@ const extendedTravelEl = document.getElementById("travel");
 const extendedMusicBtnEl = document.getElementById("musicBtn");
 const extendedTvBtnEl = document.getElementById("tvBtn");
 const extendedTravelBtnEl = document.getElementById("travelBtn");
+const sliderBtn1 = document.getElementById("btn1");
+const sliderBtn2 = document.getElementById("btn2");
+const sliderBtn3 = document.getElementById("btn3");
+const sliderimg1 = document.getElementById("sliderimg1");
+const sliderimg2 = document.getElementById("sliderimg2");
+const sliderimg3 = document.getElementById("sliderimg3");
 
 let count = 0;
 
@@ -25,6 +31,7 @@ function showAboutExtended(){
     if(count === 0){
         aboutExtendedEl.style = 'display: flex';
         count = 1;
+        revealTravel();
     } else if(count === 1) {
         aboutExtendedEl.style = 'display:none';
         count = 0;
@@ -55,3 +62,31 @@ function revealTravel() {
     extendedTvBtnEl.style="background-color:#8077ed;";
     extendedTravelBtnEl.style="background-color:#9897a4;";
 }
+
+function revealFirst(){
+    sliderBtn1.style.backgroundColor = "#8077ed";
+    sliderBtn2.style.backgroundColor = "white";
+    sliderBtn3.style.backgroundColor = "white";
+    sliderimg1.style.display = "block";
+    sliderimg2.style.display = "none";
+    sliderimg3.style.display = "none";
+}
+
+function revealSecond(){
+    sliderBtn1.style.backgroundColor = "white";
+    sliderBtn2.style.backgroundColor = "#8077ed";
+    sliderBtn3.style.backgroundColor = "white";
+    sliderimg1.style.display = "none";
+    sliderimg2.style.display = "block";
+    sliderimg3.style.display = "none";
+}
+
+function revealThird(){
+    sliderBtn1.style.backgroundColor = "white";
+    sliderBtn2.style.backgroundColor = "white";
+    sliderBtn3.style.backgroundColor = "#8077ed";
+    sliderimg1.style.display = "none";
+    sliderimg2.style.display = "none";
+    sliderimg3.style.display = "block";
+}
+

@@ -146,9 +146,22 @@
                     I loved every second of my trip and hope to go back soon. I have attached some photos below of some highlights from the trip!
                     
                     <div class="about-me-extended__holiday-pictures">
-                        <img src="img/IMG_1996-min.JPG">
-                        <img src="img/IMG_1714-min.JPG">
-                        <img src="img/IMG_1945-min.JPG">
+
+                        <div class="about-me-extended__holiday-pictures-inner">
+
+                            
+                            <div class="slider">
+                                <img id="sliderimg1" src="img/IMG_1996-min.JPG">
+                                <img id="sliderimg2" src="img/IMG_1714-min.JPG" style="display:none">
+                                <img id="sliderimg3" src="img/IMG_1945-min.JPG" style="display:none"> 
+                            </div>
+                           
+
+                        <div class="about-me-extended__holiday-buttons">
+                            <button id="btn1" onclick="revealFirst()"></button>
+                            <button id="btn2" onclick="revealSecond()"></button>
+                            <button id="btn3" onclick="revealThird()"></button>
+                        </div>
                     </div>
 
 

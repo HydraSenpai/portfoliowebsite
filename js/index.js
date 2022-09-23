@@ -31,7 +31,6 @@ function showAboutExtended(){
     if(count === 0){
         aboutExtendedEl.style = 'display: flex';
         count = 1;
-        revealTravel();
     } else if(count === 1) {
         aboutExtendedEl.style = 'display:none';
         count = 0;
